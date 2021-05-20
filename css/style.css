@@ -1,0 +1,313 @@
+
+body,*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width:100%; 
+    height:100%; 
+    overflow-x: hidden;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+ }
+
+.header{
+    background: url('https://cdn.motor1.com/images/mgl/q9lAJ/s1/mercedes-vision-avtr-concept.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.header__logo-img{
+    display: flex;
+    align-items: center;
+    width: 70px;
+}
+
+.header__top-line{
+    background-color: rgba(139, 104, 196, 0.7);
+    height: 90px;
+} 
+
+.header__top-line .container{
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+}
+
+.menu{
+    font-size: 60px;
+
+}
+
+.menu:hover{
+    color: #fff;
+}
+
+.header__nav-link{
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(216, 216, 216);
+    margin-right: 30px;
+    padding: 0px 10px;
+
+}
+
+.header__nav-link:hover{
+    color: #fff;
+}
+
+.header__content{
+    padding: 200px 0 335px;
+}
+
+.header__content-inner{
+    width: auto;
+}
+
+.header__title{
+    color: rgb(255, 254, 254);
+    font-size: 50px;
+    text-shadow: 0px 0px 1px rgb(226, 225, 225), 0 0 4em black;
+    margin-bottom: 40px;
+    font-weight: 400; 
+}
+
+.header__subtitle{
+    margin-bottom: 40px;
+    color: #fff;
+    font-size: 40px;
+    text-shadow: 0px 0px 1px #fff, 0 0 4em black;
+}
+
+.header__btn{
+    color: rgb(218, 218, 218);
+    background: linear-gradient(45deg,rgb(105, 75, 139),rgb(51, 76, 153));
+    padding: 15px 60px;
+    font-size: 25px;
+    text-decoration: none;
+    border: 1px solid rgb(42, 33, 53);
+}
+
+.header__btn:hover{
+    background-color: rgb(110, 110, 110);
+    border: 1px solid rgb(110, 110, 110);
+    color: #fff;
+}
+
+
+.info{
+    background-color: rgb(39, 58, 117);
+}
+
+.info__inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0 100px;
+    flex-wrap: wrap;
+}
+
+.info__item{
+    width: 500px;
+    border: 1px solid #000;
+    margin: 20px;
+    padding: 30px;
+    background: linear-gradient(45deg, rgb(55, 81, 160),  rgb(79, 56, 105));
+    border-radius: 30px;
+    font-size: 25px;
+}
+
+.info__text{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.info__btn{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 0 10px;
+    background-color: blueviolet;
+    float: unset;
+}
+
+.info__btn:hover{
+    background-color: rgb(110, 110, 110);
+    border: 1px solid transparent;
+}
+
+.features{
+    padding: 300px 0;
+    background: url('https://www.ixbt.com/img/n1/news/2021/3/6/20C0714_063_large.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.features__inner{
+    display: flex;
+}
+
+.features__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    border: 2px solid blueviolet;
+    border-radius: 100%;
+    background: linear-gradient(45deg, rgb(39, 58, 117),  rgb(79, 56, 105));
+    flex-wrap: wrap;
+    float: right;
+    margin-top: 400px;
+    border-radius: 40px;
+}
+
+.features__text{
+    font-size: 30px;
+    color: rgb(198, 164, 218);
+    text-align: center;
+}
+
+.footer{
+    padding: 20px 0 ;
+    background-color: blueviolet;
+}
+
+.footer__inner{
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    width: auto;
+    padding: 5px;
+}
+
+.footer__title{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer__tovarmark{
+    color: #fff;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.footer__secure{
+    color: #fff;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.footer__system{
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer__cop{
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width: 991px) {
+    .header__title{
+        font-size: 40px;
+    }
+
+    .footer{
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 767px){
+    .header__subtitle{
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .header__title{
+        text-align: center;
+    }
+
+    .header__btn{
+        width: 250px;
+        justify-content: center;
+        display: flex;
+        margin: 0 auto;
+        font-size: 30px;
+    }
+
+    .menu{
+        margin-right: 40px;
+    }
+
+    .info__item{
+        margin: 40px;
+        width: 280px;
+    }
+
+    .info__inner{
+        justify-content: center;
+        padding: 30px 0 30px;
+    }
+
+    .footer{
+        padding: 10px;
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 414px){
+    .header__title{
+        font-size: 30px;
+    }
+    .header__btn{
+        justify-content: center;
+        display: flex;
+        margin: 0 auto;
+        font-size: 30px;
+    }
+
+    .header__subtitle{
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .header__title{
+        text-align: center;
+    }
+
+    .info__inner{
+        justify-content: center;
+        padding: 30px 0 30px;
+    }
+
+    .info__item{
+        width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .info__item:last-child{
+        margin-bottom: 0px;
+    }
+
+    .footer{
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .header__nav-link{
+        color: transparent;
+    }
+}
